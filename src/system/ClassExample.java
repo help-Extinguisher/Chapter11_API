@@ -2,7 +2,7 @@ package system;
 
 
 public class ClassExample {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 		
 		
 		
@@ -14,12 +14,12 @@ public class ClassExample {
 //		Class clazz = Class.forName("java.lang.String");
 //		
 //		// 세번째 방법
-//		Car car = new Car();
-//		Class clazz = car.getClass();
-//		
-//		System.out.println(clazz.getName());
-//		System.out.println(clazz.getSimpleName());
-//		System.out.println(clazz.getPackage().getName());
+		Car c1 = new Car();
+		Class clazz = c1.getClass();
+		
+		System.out.println(clazz.getName());
+		System.out.println(clazz.getSimpleName());
+		System.out.println(clazz.getPackage().getName());
 	}
 
 }
